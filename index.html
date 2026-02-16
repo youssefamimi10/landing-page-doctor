@@ -3,118 +3,133 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Dr Moussa Ezzahraoui | Gynecologie chirurgicale Casablanca</title>
-  <meta name="description" content="Prise de rendez-vous en ligne pour le cabinet du Dr Moussa Ezzahraoui a Casablanca.">
+  <title>Dr Moussa Ezzahraoui - Gynecologie chirurgicale Casablanca</title>
+  <meta name="description" content="Cabinet Dr Moussa Ezzahraoui: prise de rendez-vous gynecologie obstetrique a Casablanca.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
-  <div class="bg-layer" aria-hidden="true"></div>
-
-  <header class="site-header">
-    <div class="container nav-shell">
-      <a class="brand" href="#top">
-        <img src="assets/logo-main.svg" alt="Sirwaji">
-        <span>SIRwAJI <small>Medical Booking</small></span>
-      </a>
-      <nav class="nav-links">
-        <a href="#profil">Profil</a>
-        <a href="#booking">Reservation</a>
-        <a href="#map">Adresse</a>
-      </nav>
-      <a class="btn btn-soft" href="#booking">Prendre rendez-vous</a>
-    </div>
-  </header>
-
-  <main id="top" class="container">
-    <nav class="breadcrumb" aria-label="Fil d'ariane">
-      <a href="#top">Accueil</a>
-      <span>/</span>
-      <a href="#profil">Gynecologue</a>
-      <span>/</span>
-      <a href="#map">Casablanca</a>
-      <span>/</span>
-      <strong>Dr Moussa Ezzahraoui</strong>
-    </nav>
-
-    <section id="profil" class="profile-card">
-      <div class="profile-head">
-        <img class="avatar" src="https://images.unsplash.com/photo-1537368910025-700350fe46c7?auto=format&fit=crop&w=500&q=80" alt="Dr Moussa Ezzahraoui">
-        <div>
-          <h1>Dr Moussa Ezzahraoui</h1>
-          <p class="speciality">Gynecologue obstetricien - Gynecologie chirurgicale</p>
-          <p class="rating">★★★★☆ <span>4.7/5</span></p>
-          <div class="chips">
-            <span>2 Mars</span>
-            <span>Casablanca</span>
-            <span>Sur rendez-vous</span>
-          </div>
+  <div class="page-shell">
+    <header class="utility-bar">
+      <div class="container utility-inner">
+        <nav class="utility-links" aria-label="Liens rapides">
+          <a href="#booking">FAQ</a>
+          <a href="#about">About</a>
+          <a href="#map">Contact</a>
+        </nav>
+        <div class="utility-social" aria-label="Reseaux">
+          <a href="#" aria-label="Twitter">t</a>
+          <a href="#" aria-label="Facebook">f</a>
+          <a href="#" aria-label="LinkedIn">in</a>
+          <a href="#" aria-label="Google">g+</a>
         </div>
       </div>
+    </header>
 
-      <div class="gallery">
+    <header class="main-header">
+      <div class="container main-inner">
+        <a class="brand" href="#top">
+          <img src="assets/logo-main.svg" alt="Sirwaji">
+          <span>MEDICAL</span>
+        </a>
+        <nav class="main-menu" aria-label="Navigation">
+          <a href="#top">Home</a>
+          <a href="#services">Features</a>
+          <a href="#services">Departments</a>
+          <a href="#about">Our Doctors</a>
+          <a href="#booking">Timetable</a>
+          <a href="#map">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="top" class="container">
+      <section class="hero">
+        <img
+          src="https://images.unsplash.com/photo-1585435557343-3b092031a4f3?auto=format&fit=crop&w=2000&q=80"
+          alt="Equipe medicale"
+          loading="eager"
+        >
+        <div class="hero-overlay">
+          <p>CARING FOR LIFE</p>
+          <h1>Leading the Way in Medical Excellence.</h1>
+        </div>
+      </section>
+
+      <section class="appointment-card" id="services">
+        <article class="emergency-panel">
+          <h2>EMERGENCY CASES</h2>
+          <p class="phone">+212 522 001 122</p>
+          <p>Adresse: 111, Rue Sebta, Quartier Des Hopitaux, 2 Mars, Casablanca</p>
+          <p>Horaires: Lun - Sam / 09:00 - 18:30</p>
+          <p>Email: contact.drmoussa@sirwaji.app</p>
+          <a class="btn btn-outline" href="tel:+212522001122">Afficher Tel</a>
+        </article>
+
+        <article class="request-panel">
+          <h2>REQUEST APPOINTMENT</h2>
+          <form id="quick-form" class="request-form">
+            <input type="text" placeholder="Nom *" required>
+            <input type="tel" placeholder="Telephone *" required>
+            <input type="email" placeholder="E-mail *" required>
+            <input type="date" required>
+            <select required>
+              <option value="">Departement</option>
+              <option>Gynecologie medicale</option>
+              <option>Gynecologie chirurgicale</option>
+              <option>Obstetrique</option>
+            </select>
+            <select required>
+              <option value="">Docteur</option>
+              <option>Dr Moussa Ezzahraoui</option>
+            </select>
+            <textarea placeholder="Message" rows="4"></textarea>
+            <button id="go-booking" class="btn btn-primary" type="submit">SUBMIT NOW</button>
+          </form>
+        </article>
+      </section>
+
+      <section id="about" class="about-card">
         <img src="assets/doctor-cabinet.webp" alt="Cabinet du Dr Moussa">
-        <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=1200&q=80" alt="Salle de consultation">
-        <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1200&q=80" alt="Accueil du cabinet">
-      </div>
-    </section>
-
-    <section class="content-grid">
-      <article class="info-card">
-        <h2>Indications / Detail acces</h2>
-        <p>
-          111, Rue Sebta, Quartier Des Hopitaux, 2 Mars,
-          Gynecologie chirurgicale, 20000, Casablanca, Maroc
-        </p>
-        <div class="actions">
-          <a class="btn btn-primary" href="tel:+212522001122">Afficher Tel</a>
-          <a class="btn btn-outline" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&destination=111,+Rue+Sebta,+Quartier+Des+Hopitaux,+2+Mars,+Casablanca,+Maroc">Itineraire</a>
+        <div>
+          <h2>Dr Moussa Ezzahraoui</h2>
+          <p>
+            Gynecologue obstetricien chirurgien a Casablanca. Prise en charge en gynecologie medicale
+            et chirurgicale: infertilite, fibrome, endometriose, coelioscopie et chirurgie mini-invasive.
+          </p>
+          <ul>
+            <li>Chirurgie des cancers gynecologiques</li>
+            <li>Echographie obstetricale 3D</li>
+            <li>Suivi grossesse et accouchement</li>
+            <li>Consultations sur rendez-vous</li>
+          </ul>
         </div>
-      </article>
+      </section>
 
-      <article class="info-card">
-        <h2>Presentation de l'etablissement</h2>
-        <p>
-          Docteur Moussa Ezzahraoui Gynecologue Obstetricien Chirurgien.
-          Prise en charge en gynecologie medicale et chirurgicale:
-          prolapsus, incontinence urinaire, infertilite, coelioscopie, fibrome,
-          kyste de l'ovaire, endometriose et chirurgie mini-invasive.
-        </p>
-        <ul class="skills">
-          <li>Chirurgie des cancers gynecologiques</li>
-          <li>Coelioscopie & hysteroscopie</li>
-          <li>Echographie obstetricale 3D</li>
-          <li>Suivi grossesse & accouchement</li>
-        </ul>
-      </article>
-    </section>
+      <section id="booking" class="booking-card">
+        <div class="section-head">
+          <h2>Reservation en ligne</h2>
+          <a id="open-booking" class="btn btn-outline" href="#" target="_blank" rel="noopener">Ouvrir dans un nouvel onglet</a>
+        </div>
+        <div class="embed-frame">
+          <iframe id="booking-embed" title="Reservation patient" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <p id="embed-status" class="embed-status">Chargement du formulaire de reservation...</p>
+      </section>
 
-    <section id="booking" class="booking-shell">
-      <div class="section-head">
-        <h2>Reservation en ligne integree</h2>
-        <a id="open-booking" class="btn btn-outline" href="#" target="_blank" rel="noopener">Ouvrir dans un nouvel onglet</a>
-      </div>
-      <p class="hint">Le formulaire ci-dessous est directement connecte au planning du cabinet.</p>
-      <div class="embed-frame">
-        <iframe id="booking-embed" title="Reservation patient" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </div>
-      <p id="embed-status" class="embed-status">Chargement du formulaire de reservation...</p>
-    </section>
-
-    <section id="map" class="map-shell">
-      <div class="section-head">
+      <section id="map" class="map-card">
         <h2>Localisation du cabinet</h2>
-      </div>
-      <div class="map-frame">
-        <iframe
-          title="Carte du cabinet"
-          loading="lazy"
-          src="https://www.google.com/maps?q=111%2C+Rue+Sebta%2C+Quartier+Des+Hopitaux%2C+2+Mars%2C+Gynecologie+chirurgicale%2C+20000%2C+Casablanca%2C+Maroc&output=embed"></iframe>
-      </div>
-    </section>
-  </main>
+        <div class="map-frame">
+          <iframe
+            title="Carte du cabinet"
+            loading="lazy"
+            src="https://www.google.com/maps?q=111%2C+Rue+Sebta%2C+Quartier+Des+Hopitaux%2C+2+Mars%2C+Gynecologie+chirurgicale%2C+20000%2C+Casablanca%2C+Maroc&output=embed"></iframe>
+        </div>
+      </section>
+    </main>
+  </div>
 
   <script src="assets/app.js"></script>
 </body>
