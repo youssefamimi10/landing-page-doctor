@@ -29,7 +29,7 @@ function setBookingUrl(url) {
 
   bookingIframe.src = bookingUrl;
   openBookingLink.href = bookingUrl;
-  bookingStatus.textContent = "Chargement du formulaire de reservation...";
+  bookingStatus.textContent = "Chargement du formulaire de reservation";
 }
 
 function goToBooking() {
@@ -41,7 +41,7 @@ function goToBooking() {
 function bindEvents() {
   bookingIframe.addEventListener("load", () => {
     bookingStatus.textContent =
-      "Formulaire charge. Si votre navigateur bloque l'iframe, utilisez le bouton nouvel onglet.";
+      "Formulaire charge, si votre navigateur bloque l'iframe, utilisez le bouton nouvel onglet";
   });
 
   if (quickForm) {

@@ -197,6 +197,8 @@ main {
 .emergency-panel {
   border-right: 1px solid #ebf0fb;
   background: #fbfdff;
+  display: flex;
+  flex-direction: column;
 }
 
 .emergency-panel h2,
@@ -221,6 +223,11 @@ main {
   line-height: 1.2;
   font-weight: 600;
   margin-top: 16px;
+}
+
+.call-btn {
+  margin-top: auto;
+  align-self: flex-start;
 }
 
 .request-form {
@@ -359,6 +366,13 @@ main {
   padding: 18px;
 }
 
+.booking-card {
+  min-height: calc(100vh - 28px);
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  gap: 10px;
+}
+
 .section-head {
   display: flex;
   align-items: center;
@@ -367,17 +381,20 @@ main {
 }
 
 .embed-frame {
-  margin-top: 12px;
+  margin-top: 0;
   border: 1px solid #d7e4fc;
   border-radius: 12px;
   overflow: hidden;
+  height: calc(100vh - 190px);
   min-height: 620px;
 }
 
 .embed-frame iframe {
   width: 100%;
+  height: 100%;
   min-height: 620px;
   border: 0;
+  display: block;
 }
 
 .embed-status {
@@ -416,8 +433,21 @@ main {
     border-bottom: 1px solid #ebf0fb;
   }
 
+  .call-btn {
+    margin-top: 14px;
+  }
+
   .about-card {
     grid-template-columns: 1fr;
+  }
+
+  .booking-card {
+    min-height: 0;
+  }
+
+  .embed-frame {
+    height: calc(100vh - 210px);
+    min-height: 540px;
   }
 }
 
@@ -455,6 +485,7 @@ main {
 
   .embed-frame,
   .embed-frame iframe {
-    min-height: 500px;
+    min-height: 440px;
+    height: 70vh;
   }
 }
