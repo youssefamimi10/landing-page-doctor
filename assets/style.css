@@ -201,6 +201,12 @@ main {
   flex-direction: column;
 }
 
+.request-panel {
+  display: grid;
+  align-content: start;
+  gap: 12px;
+}
+
 .emergency-panel h2,
 .request-panel h2 {
   margin: 0;
@@ -208,6 +214,25 @@ main {
   font-weight: 700;
   letter-spacing: 0.04em;
   color: #32486f;
+}
+
+.request-intro {
+  margin: 0;
+  font-size: 0.84rem;
+  line-height: 1.65;
+  color: #5f7398;
+}
+
+.request-points {
+  margin: 0;
+  padding-left: 18px;
+  display: grid;
+  gap: 8px;
+}
+
+.request-points li {
+  color: #45628f;
+  font-size: 0.8rem;
 }
 
 .emergency-panel p {
